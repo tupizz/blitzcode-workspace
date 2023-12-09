@@ -1,5 +1,3 @@
-import { test, expect, describe } from "vitest";
-
 // Exercício: Promises com Timeout
 // Objetivo: Implementar um timeout para uma Promise.
 // Desafio:
@@ -8,25 +6,6 @@ import { test, expect, describe } from "vitest";
 // Entrada: N/A
 //   Saída Esperada: Resultado da Promise ou "Timeout Error"
 
-function promiseWithTimeout() {
+export default function promiseWithTimeout() {
   return null;
 }
-
-// ⚠️ Testes abaixo, para melhor aproveitamento não mexam neles
-// ⚠️ foque-se em resolver solução acima
-describe("Promises com Timeout", () => {
-  test("a função retorna uma Promise", () => {
-    const result = promiseWithTimeout();
-    expect(result).toBeInstanceOf(Promise);
-  });
-
-  test("resolve a Promise ou retorna erro de timeout", async () => {
-    try {
-      const result = await promiseWithTimeout();
-      // expect that the function returns a promise
-      expect(result).toBe("Operação bem-sucedida");
-    } catch (error) {
-      expect(error.message).toBe("Timeout Error");
-    }
-  });
-});
